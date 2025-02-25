@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Threads from './component/Threads';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='w-full h-screen relative bg-black'>
+      <div className='w-full h-screen flex justify-center items-center text-white gap-4'>
+        <div>1</div>
+        <div>2</div>
+      </div>
+      <Threads className='w-full h-screen absolute top-0 left-0'
+        amplitude={0.9}
+        distance={1.2}
+        enableMouseInteraction={true}/>
     </div>
   );
 }
