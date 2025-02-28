@@ -223,7 +223,7 @@ const Threads = ({
   }, [color, amplitude, distance, enableMouseInteraction]);
 
   return (
-    <div ref={containerRef} className="w-full h-full relative" {...rest} />
+    <div ref={containerRef} className="w-full h-full " {...rest} />
   );
 };
 
